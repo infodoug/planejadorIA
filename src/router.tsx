@@ -3,6 +3,7 @@ import { Button } from './components/shared/Button';
 import { PiggyBank } from 'lucide-react';
 import { RootLayout } from './components/layout/RootLayout';
 import { SimulationFormPage } from './pages/SimulationFormPage';
+import { SimulationResultsPage } from './pages/SimulationResultsPage';
 
 export const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ export const router = createBrowserRouter([
         element: <SimulationFormPage />,
       },
       {
-        path: '/resultado',
-        element: <h1>Resultado de Simulação</h1>,
+        path: '/resultado/:id',
+        element: <SimulationResultsPage />,
       },
       {
         path: '/historico',
